@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1087487773740",
+    "firebase_url": "https://mochi-c0238-default-rtdb.firebaseio.com",
+    "project_id": "mochi-c0238",
+    "storage_bucket": "mochi-c0238.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087487773740:android:528a546c8be612fd98d589",
+        "android_client_info": {
+          "package_name": "com.example.mochi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1087487773740-og9r4ia8m1rks45effp38gs3qrq1d9pv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mochi",
+            "certificate_hash": "ffa4563f1d9b379b91db2046db4f68086a5c7c7a"
+          }
+        },
+        {
+          "client_id": "1087487773740-7lv40d3ikd4m7og2nljbheoltq9r823f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5eDqFclwVIDTlg-Jd1wJL73OlCvO3f_Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1087487773740-7lv40d3ikd4m7og2nljbheoltq9r823f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

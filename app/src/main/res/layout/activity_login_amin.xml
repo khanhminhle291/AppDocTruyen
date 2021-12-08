@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.admin.MainAmin">
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:textColor="#2196F3"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:text="Nếu là Admin mời bạn đăng nhập nhé."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:drawableRight="@drawable/ic_bear"
+        android:id="@+id/taikhoan"
+        android:layout_marginTop="90dp"
+        android:layout_gravity="center"
+        android:hint="Tài khoản"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:drawableRight="@drawable/ic_newpass"
+        android:id="@+id/matkhau"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:hint="Mật khẩu"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/dangnhap"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="Đăng nhập"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

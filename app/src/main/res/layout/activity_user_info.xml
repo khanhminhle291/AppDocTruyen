@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.userinfo.UserInfo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginBottom="-70dp"
+            android:background="#fece2f"
+            android:padding="1dp">
+
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/profile_image" />
+
+            <TextView
+                android:id="@+id/fullNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/profile_image"
+                android:fontFamily="@font/bungee"
+                android:includeFontPadding="false"
+                android:textSize="20dp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-100dp"
+            android:padding="15dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#fece2f"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/payment_icon" />
+
+                    <TextView
+                        android:id="@+id/payment_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/bungee"
+                        android:includeFontPadding="false"
+                        android:text="123$"
+                        android:textSize="21sp" />
+
+                    <TextView
+                        android:id="@+id/payment_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/payment_label"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/bungee"
+                        android:text="Balance"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#fece2f"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/booking" />
+
+                    <TextView
+                        android:id="@+id/booking_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/bungee"
+                        android:includeFontPadding="false"
+                        android:text=""
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/booking_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/booking_label"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/bungee"
+                        android:text="Book"
+                        android:textSize="14sp" />
+
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="-10dp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="3dp"
+                android:hint="Họ Tên">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fullNameET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/name"
+                    android:drawablePadding="8dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailET"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="3dp"
+                android:hint="Email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/email"
+                    android:drawablePadding="10dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phoneNumberET"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="3dp"
+                android:hint="Phone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/phone"
+                    android:drawablePadding="20dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/usernameET"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="3dp"
+                android:hint="Tên tài khoản">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/username"
+                    android:drawablePadding="15dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="4dp"
+                android:hint="Mật khẩu">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/pass"
+                    android:drawablePadding="15dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/updateBT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fece2f"
+                android:fontFamily="@font/bungee"
+                android:text="Updata" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

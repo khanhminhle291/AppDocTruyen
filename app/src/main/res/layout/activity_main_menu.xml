@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@drawable/images"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="310dp">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/imageview"
+            android:layout_marginTop="10dp"
+            android:scrollX="10dp"
+            android:src="@drawable/name"
+            android:layout_width="90dp"
+            android:layout_height="80dp">
+
+        </ImageView>
+
+        <TextView
+
+            android:textColor="#ff0"
+            android:textStyle="bold"
+            android:text="Wecome"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/TEXT_NAME"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textStyle="bold"
+            android:text="Online"
+            android:id="@+id/TEXT_Trangthai"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
